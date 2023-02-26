@@ -9,7 +9,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.snackbar.Snackbar
-import com.voidhash.dialogparadise.R
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
@@ -70,7 +69,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showSnackBar(message: String) {
-        Snackbar.make(linearLayout, message, Snackbar.LENGTH_LONG)
+       Snackbar.make(linearLayout, message, Snackbar.LENGTH_LONG)
+           .setAction("Call Toast", View.OnClickListener {
+            showToast("Snackbar action call me here!")
+        }).show()
     }
 
     private fun showAlertDialog(view: View) {
