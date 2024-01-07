@@ -1,6 +1,14 @@
 # DialogCollection
 A collections of dialogs ready to be use in any Android project
 
+### Screenshot
+
+![dialog-collection](https://github.com/VoidHash/dialog-collection/assets/8929413/631c2458-944a-4e38-9a4b-53d0a9f3b95f)
+
+---
+
+Check how it works
+
 ### Toast
 ```kotlin
 Toast.makeText(this, message, Toast.LENGTH_LONG).show()
